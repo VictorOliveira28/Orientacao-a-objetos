@@ -11,6 +11,6 @@ Um breve resumo a respeito dos 4 pilares da Programação Orientada a Objetos.
  Na Programação Orientada a Objetos (POO), a prática comum é encapsular dados e métodos dentro de classes. Mas o que exatamente significa encapsular métodos e dados? Os atributos e métodos de uma classe estão estreitamente interligados. Embora os objetos possam se comunicar entre si, geralmente não têm conhecimento sobre a implementação interna de outros objetos, pois esses detalhes permanecem ocultos dentro do próprio objeto. Abaixo, veremos um modelo de encapsulamento:
  
 
- ### Herança
+
 
  
