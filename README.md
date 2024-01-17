@@ -73,7 +73,7 @@ A classe Account oferece uma abstração para uma conta bancária genérica, apr
 
  ## Conclusão
 
-Em conclusão, ao compreender e aplicar os pilares da POO, os desenvolvedores podem criar sistemas mais eficientes, flexíveis e fáceis de manter. A combinação de encapsulamento, herança, polimorfismo e abstração constrói uma base sólida para o desenvolvimento de software orientado a objetos, impulsionando a inovação e a eficácia no mundo da programação.
+Ao compreender e aplicar os pilares da POO, os desenvolvedores podem criar sistemas mais eficientes, flexíveis e fáceis de manter. A combinação de encapsulamento, herança, polimorfismo e abstração constrói uma base sólida para o desenvolvimento de software orientado a objetos, impulsionando a inovação e a eficácia no mundo da programação.
 
 
 
