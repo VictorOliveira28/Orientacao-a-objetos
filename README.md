@@ -2,13 +2,15 @@
 Um breve resumo a respeito dos 4 pilares da Programação Orientada a Objetos.
 
 ## Introdução
-  Bem-vindo ao meu artigo sobre os 4 pilares da orientação a objetos! Nele, discutiremos os conceitos principais que compõem a base da programação orientada a objetos (POO). Os 4 pilares são princípios-chave que norteiam o design e a implementação de sistemas baseados em objetos, permitindo a flexibilidade, reutilização e a manutenibilidade de código.
+  Neste resumo, discutiremos os conceitos principais que compõem a base da programação orientada a objetos (POO), Encapsulamento, Herança, Polimorfismo e Abstração. Os 4 pilares são princípios-chave que norteiam o design e a implementação de sistemas baseados em objetos, permitindo a flexibilidade, reutilização e a manutenibilidade de código.
 
 ## Pilares da POO
 
 ### Encapsulamento
 
- Na Programação Orientada a Objetos (POO), a prática comum é encapsular dados e métodos dentro de classes. Mas o que exatamente significa encapsular métodos e dados? Os atributos e métodos de uma classe estão estreitamente interligados. Embora os objetos possam se comunicar entre si, geralmente não têm conhecimento sobre a implementação interna de outros objetos, pois esses detalhes permanecem ocultos dentro do próprio objeto. Abaixo, veremos um modelo de encapsulamento:
+ Na Programação Orientada a Objetos (POO), a prática comum é encapsular atributos e métodos dentro de classes. Mas o que exatamente significa encapsular métodos e atributos? Encapsular é restringir o acesso a uma informação, conforme a necessidade do projeto, mas lembre-se, encapsular não significa tornar a informação inacessível, mas controlar como essa informação é acessada. A ideia é que objetos externos não precisam conhecer os detalhes internos de outro objeto, isso quer dizer que a implementação interna de um objeto é oculta para outros. Esse encapsulamento ocorre na estrutura interna do objeto, incluindo seus métodos e atributos privados, mantendo dentro do escopo do próprio objeto. A utilização dos modificadores de acesso é essencial para implementar o encapsulamento, eles definem as regras de visibilidade dos membros de uma classe, determinando quem pode acessar e/ou modificar determinadas partes do código.
+ 
+ Abaixo, veremos um modelo de encapsulamento:
  ![Encapsulamento](https://github.com/VictorOliveira28/Orientacao-a-objetos/raw/main/imagens/Encapsulamento.png)
 
  ### Herança
@@ -21,9 +23,9 @@ Um breve resumo a respeito dos 4 pilares da Programação Orientada a Objetos.
   ![Herança](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/heran%C3%A7a2.png)
   É importante notar que a classe SavingsAccount herda os seguintes atributos da classe pai:
 
-accountNumber: Identificador exclusivo da conta.
+number: Identificador exclusivo da conta.
 
-accountHolder: Nome do titular da conta.
+holder: Nome do titular da conta.
 
 balance: Saldo atual da conta.
 
