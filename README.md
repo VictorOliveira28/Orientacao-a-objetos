@@ -14,14 +14,17 @@ Um breve resumo a respeito dos 4 pilares da Programação Orientada a Objetos.
  ![Encapsulamento](https://github.com/VictorOliveira28/Orientacao-a-objetos/raw/main/imagens/Encapsulamento.png)
 
  ### Herança
-  Na Programação Orientada a Objetos (POO), a herança é um mecanismo que permite que uma classe herde as características (atributos e métodos) de uma outra classe. Essa abordagem possibilita a reutilização de código e estabelece uma relação "é-um" entre as classes. A classe derivada (classe filha) herda as propriedades da classe base (classe pai). Veremos a seguir um exemplo de Herança:
+ 
+  Na Programação Orientada a Objetos (POO), a herança é um mecanismo que permite que uma classe herde as características (atributos e métodos) de uma outra classe. Essa abordagem possibilita a reutilização de código e estabelece uma relação "é-um" entre as classes. A classe derivada (classe filha) herda as propriedades da classe base (classe pai).
+  Veremos a seguir um exemplo de Herança:
 
   Neste contexto, desenvolvemos a classe pai, responsável por fornecer os atributos e métodos fundamentais à classe filha.
   ![Herança](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/heran%C3%A7a1.png)
+  ![Herança](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/Captura%20de%20tela%202024-01-17%20114720.png)
 
   Posteriormente, implementamos a classe filha, que herda integralmente os métodos e atributos da classe pai.
   ![Herança](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/heran%C3%A7a2.png)
-  É importante notar que a classe SavingsAccount herda os seguintes atributos da classe pai:
+  É importante notar que a classe SavingsAccount herda (esse recurso se da pela palavra reservada extends, que informa ao compilador sobre a operação de herança) os seguintes atributos da classe pai:
 
 number: Identificador exclusivo da conta.
 
@@ -43,9 +46,12 @@ interestRate: Taxa de juros associada à conta de poupança.
 
 addInterest(): Calcula e adiciona juros à conta com base na taxa de juros configurada.
 
+A decisão de usar herança deve ser baseada nas necessidades específicas do seu projeto e na estrutura mais eficiente e fácil de se manter. No entanto, é importante ter cuidado ao utilizar Herança, considerando os desafios e problemas associados a ela, como rigidez na estrutura, forte acoplamento e poluição de interfaces. Alguns programadores preferem utilizar Composições e Interfaces, pois elas aumentam a flexibilidade e manutenabilidade do código.
+
 ### Polimorfismo
 
-Polimorfismo permite que objetos de diferentes classes sejam tratados de maneira uniforme. Existem dois tipos de polimorfismo: estático (sobrecarga de método) e dinâmico (sobreposição de método). O polimorfismo aumenta a flexibilidade e facilita a manutenção do código. Observe o código a seguir:
+Polimorfismo permite que objetos assumam diferentes formas, uma mesma operação pode ser realizada por diferentes objetos de classes diferentes. Podemos implementar o polimorfismo através do uso de herança e interfaces. Com isso, podemos criar códigos mais genéricos e flexíveis, tornando o processo de desenvolvimento mais eficiente. Compreender oque é o polimorfismo é essencial para quem quer desenvolver aplicações de qualidade e com alta performance.
+Abaixo veremos um exemplo de polimorfismo:
 
 ![Polimorfismo](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/Captura%20de%20tela%202024-01-16%20145157.png)
 
@@ -57,16 +63,24 @@ A abstração compreende a simplificação de complexidades desnecessárias, con
 Irei utilizar novamente o exemplo da Account e SavingsAccount para exemplificar a abstração.
 
 A classe Account oferece uma abstração para uma conta bancária genérica, apresentando métodos como withdraw e displayBalance, que representam ações comuns em contas. Já a classe SavingsAccount estende a Account e acrescenta um comportamento específico para contas de poupança, introduzindo o método addInterest para calcular e adicionar juros à conta.
+
 ![Abstração](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/heran%C3%A7a1.png)
  
 
- Ao chamar a função performTransaction, você está utilizando a abstração proporcionada pela classe Account para efetuar transações, sem considerar se é uma conta comum ou uma conta poupança. Isso exemplifica o conceito de abstração, no qual objetos de classes distintas são tratados de maneira uniforme, utilizando apenas a interface comum fornecida pela classe base (Account). 
+ Ao chamar a função performTransaction, você está utilizando a abstração proporcionada pela classe Account para efetuar transações, sem considerar se é uma conta comum ou uma conta poupança. Isso exemplifica o conceito de abstração, no qual objetos de classes distintas são tratados de maneira uniforme, utilizando apenas uma operação comum fornecida pela classe base (Account).
+ 
  ![Abstração](https://github.com/VictorOliveira28/Orientacao-a-objetos/blob/main/imagens/heran%C3%A7a2.png)
 
  ## Conclusão
 
-Em conclusão, ao compreender e aplicar os pilares da POO, os desenvolvedores podem criar sistemas mais eficientes, flexíveis e fáceis de manter. A combinação de encapsulamento, herança, polimorfismo e abstração constitui uma base sólida para o desenvolvimento de software orientado a objetos, impulsionando a inovação e a eficácia no mundo da programação.
+Em conclusão, ao compreender e aplicar os pilares da POO, os desenvolvedores podem criar sistemas mais eficientes, flexíveis e fáceis de manter. A combinação de encapsulamento, herança, polimorfismo e abstração constrói uma base sólida para o desenvolvimento de software orientado a objetos, impulsionando a inovação e a eficácia no mundo da programação.
 
 
 
- 
+Livro:
+Deitel, P., & Deitel, H. (2014). Java 8: Como Programar. 
+
+Artigo Online:
+DevMedia. (2018). Uso de polimorfismo em Java. Disponível em: https://www.devmedia.com.br/uso-de-polimorfismo-em-java/26140.
+
+AWARI. (2024). Polimorfismo em Java. Disponível em: https://awari.com.br/polimorfismo-em-java/.
